@@ -18,9 +18,13 @@
       <p id="image-tribute">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a>on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
     </div>
     <div id="form">
-      <p class="main-text">This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-      <p class="main-text"><br>You <em>know</em> you want to.</p>
-      <form action="" method="post">
+      <div class="form-content">
+        <p class="main-text">This is not a real online service! you know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p class="main-text"><br>You <em>know</em> you want to.</p>
+      </div>
+      
+      <form class="form-content" action="" method="post">
+
         <h2 id="form-heading">Let's do this!</h2>
         <div id="name-fields">
           <div class="first-child">
@@ -52,13 +56,8 @@
             <input type="password" name="pass-conf" id="pass-conf" required>
           </div>
         </div>
-        
-        
-        
-        
-        
-        
-        <button type="submit">Create Account</button>
+        <button id="create-account-btn" type="submit">Create Account</button>
+        <p id="acc-exist">Already have an account? <a href="">Log in</a></p>
       </form>
     </div>
   </div>

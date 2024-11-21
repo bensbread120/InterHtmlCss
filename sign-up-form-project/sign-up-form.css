@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #wrapper {
   position: relative;
 }
@@ -30,6 +38,7 @@
 }
 
 #odin-text {
+  font-family: "norsebold",'Courier New', Courier, monospace;
   display: inline-block;
   color: aliceblue;
   font-size: 10vh;
@@ -48,32 +57,93 @@
   right: 0;
   width: 67vw;
   height: 100vh;
-  background-color: bisque;
+  background-color: white;
+  
   display: inline-block;
-  padding-left: 5%;
+  
   padding-top: 10%;
-  padding-right: 10%;
+  
 }
 
 .main-text {
   font-size: 1.8em;
 }
 
-input {
-  display: block;
+.form-content {
+  padding-left: 5%;
+  padding-right: 10%;
 }
 
-#name-fields {
-  width: 100%;
+form {
+  padding-top: 5vh;
+  background: linear-gradient(to bottom, rgb(192, 191, 191) 20%, white );
+  background-repeat: no-repeat;
+  background-size: 100% 10px; /* Line width and thickness */
+  background-position: 0 70%; /* Center vertically */
+  
 }
+
+h2 {
+  font-size: 1.5em;
+}
+
+label {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: blue;
+  border-width: 1px;
+  box-shadow: 2px 2px 5px;
+}
+
+/* #name-fields {
+  width: 100%;
+} */
 
 .first-child {
   display: inline-block;
   padding-right: 5%;
+  padding-bottom: 2.5%;
 }
 
 .second-child {
   display: inline-block;
+  padding-bottom: 2.5%;
+}
+
+/* #form-separator {
+  position: relative;
+  right: 0;
+  width: 100%;
+  height: 2vh;
+  background-color: aqua;
+} */
+
+#create-account-btn {
+  font-size: 2vh;
+  font-weight: 600;
+  background-color: #596D48;
+  width: 15vw;
+  height: 6vh;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+#acc-exist {
+  margin-top: 3%;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 :visited {
