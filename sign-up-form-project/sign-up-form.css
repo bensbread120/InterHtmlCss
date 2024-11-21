@@ -6,12 +6,14 @@
   font-style: normal;
 }
 
-#wrapper {
+/* #wrapper {
   position: relative;
-}
+} */
 
 #feature {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 33vw;
   height: 100vh;
   display: inline-block;
@@ -142,6 +144,7 @@ input:focus {
 
 #acc-exist {
   margin-top: 3%;
+  margin-bottom: 3%;
   font-size: 1.2rem;
   font-weight: 500;
 }

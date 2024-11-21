@@ -48,12 +48,13 @@
         </div>
         <div id="password-fields">
           <div class="first-child">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <!-- password pattern is at least 10 chars, must include a symbol and number and letter -->
+            <label for="password" >PASSWORD</label>
+            <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$" required>
           </div>
           <div class="second-child">
             <label for="pass-conf">CONFIRM PASSWORD</label>
-            <input type="password" name="pass-conf" id="pass-conf" required>
+            <input type="password" name="pass-conf" id="pass-conf" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$" required>
           </div>
         </div>
         <button id="create-account-btn" type="submit">Create Account</button>
