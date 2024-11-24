@@ -11,64 +11,181 @@
 <body>
   <div id="dash-container">
     <div id="side-bar">
-      <div id="dash-title">
+      <div id="dash-title" class="gen-container">
         <img id="dash-icon" class="icon" src="icons/dashboard.svg" alt="dashboard icon">
         <h1>Dashboard</h1>
       </div>
       <div id="side-bar-cont-1">
-        <div class="side-bar-item">
+        <div ></div>
+        <a class="side-bar-item gen-container">
           <img class="icon" src="icons/home.svg" alt="home icon">
           <h3>Home</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/profile.svg" alt="profile icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/profile.svg" alt="profile icon">
           <h3>Profile</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/message.svg" alt="message icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/message.svg" alt="message icon">
           <h3>Messages</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/history.svg" alt="history icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/history.svg" alt="history icon">
           <h3>History</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/tasks.svg" alt="tasks icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/tasks.svg" alt="tasks icon">
           <h3>Tasks</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/communities.svg" alt="communities icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/communities.svg" alt="communities icon">
           <h3>Communities</h3>
-        </div>
+        </a>
       </div>
       <div id="side-bar-cont-2">
-        <div class="side-bar-item">
-          <img src="icons/settings.svg" alt="settings icon">
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/settings.svg" alt="settings icon">
           <h3>Settings</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/support.svg" alt="support icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/support.svg" alt="support icon">
           <h3>Support</h3>
-        </div>
-        <div class="side-bar-item">
-          <img src="icons/privacy.svg" alt="privacy icon">
+        </a>
+        <a class="side-bar-item gen-container">
+          <img class="icon" src="icons/privacy.svg" alt="privacy icon">
           <h3>Privacy</h3>
-        </div>
+        </a>
       </div>
-      
-      
     </div>
     <div id="navbar">
-      navbar
+      <div id="search-bar" class="gen-container">
+        <img class="icon icon-clickable" src="icons/search.svg" alt="search icon">
+        <input id="search-bar-input" type="text">
+      </div>
+      <div id="profile-info" class="gen-container">
+        <div></div>
+        <img class="icon icon-clickable" src="icons/notifications.svg" alt="notifications icon">
+        <img class="icon" src="icons/alien-avatar-space-svgrepo-com.svg" alt="profile avatar">
+        <h3>Ben Hatfield</h3>
+      </div>
+      <div id="profile-welcome" class="gen-container">
+        <img id="welcome-image" class="icon" src="icons/alien-avatar-space-svgrepo-com.svg" alt="profile avatar large">
+        <p >Hello friend,</p>
+        <h3>Ben Hatfield @Bhat123</h3>
+      </div>
+      <div id="action-pane" class="gen-container">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </div>
-    <div id="main-cont">
-      main-cont 
+    <div id="main-cont" class="gen-container">
+      <h3 id="projects-title">Your Projects</h3> 
+      <div class="project card">
+        <h4>Scooter Share Project</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vel neque? Quia est repellat distinctio earum rerum aspernatur quos quod.</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
+      <div class="project card">
+        <h4>Maze Follow Algorithms</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium laboriosam autem libero nostrum maxime molestiae iusto ipsam ullam ea?</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
+      <div class="project card">
+        <h4>The Reading Room</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium voluptate corporis nulla repudiandae, magni autem aspernatur voluptatem qui corrupti itaque.</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
+      <div class="project card">
+        <h4>OS Scheduling</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a architecto accusamus earum minima facilis beatae cupiditate quibusdam mollitia laboriosam.</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
+      <div class="project card">
+        <h4>Minecraft Maze Solver</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos culpa optio dolor reprehenderit cumque ad? Dolorum sunt odit earum voluptatem.</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
+      <div class="project card">
+        <h4>Climate Change Dataset Website</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error beatae odio at fugiat dicta. Veritatis tempora facere neque delectus!</p>
+        <div class="project-buttons">
+          <img class="icon icon-clickable" src="icons/star.svg" alt="">
+          <img class="icon icon-clickable" src="icons/eye.svg" alt="">
+          <img class="icon icon-clickable" src="icons/fork.svg" alt="">
+        </div>
+      </div>
     </div>
-    <div id="announcements">
-      announcements
+    <div id="announcements" class="gen-container">
+      <h3>Announcements</h3>
+      <div id="announcements-container" class="gen-container card">
+        <div class="announcement">
+          <h5>Site Maintenance</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, veritatis est porro deserunt libero illo, asperiores corporis sunt tempora ipsum vitae...</p>
+        </div>
+        <div class="announcement">
+          <h5>New Feature</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa aperiam quas eligendi. Reprehenderit eligendi atque maxime dolorem, esse quo...</p>
+        </div>
+        <div class="announcement">
+          <h5>Updated Privacy Policy</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quos modi ex cumque tenetur quae? Repudiandae perferendis soluta numquam eaque...</p>
+        </div>
+      </div>
     </div>
-    <div id="trending">
-      trending 
+    <div id="trending" class="gen-container">
+      <h3>Trending</h3>
+      <div id="trending-item-container" class="gen-container card">
+        <div class="trending-project">
+          <img class="icon" src="icons/avatar-lazybones-sloth-svgrepo-com.svg" alt="">
+          <div>
+            <h6>@CoolDude83</h6>
+            <p>Maze generator</p>
+          </div>
+          
+        </div>
+        <div class="trending-project">
+          <img class="icon" src="icons/anime-away-face-svgrepo-com.svg" alt="">
+          <div>
+            <h6>@CompSciKid33</h6>
+            <p>Dijstras Implementation</p>
+          </div>
+        </div>
+        <div class="trending-project">
+          <img class="icon" src="icons/avatar-cloud-crying-svgrepo-com.svg" alt="">
+          <div>
+            <h6>@CodingCharles22</h6>
+            <p>Mini Terminal Mastermind</p>
+          </div>
+        </div>
+        <div class="trending-project">
+          <img class="icon" src="icons/avatar-coffee-cup-svgrepo-com.svg" alt="">
+          <div>
+            <h6>@SteveFromMC43</h6>
+            <p>Minecraft LC3</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

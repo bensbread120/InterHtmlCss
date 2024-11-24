@@ -1,12 +1,52 @@
+html {
+  /* color: white; */
+  background-color: beige;
+}
+
 .icon {
   height: 100%;
   width: 100%;
-  fill: white;
-  stroke: white;
+  padding: 2%;
+}
+
+.icon-clickable:hover {
+  background-color: rgba(255, 186, 36, 0.616);
+  border-radius: 30px;
+}
+
+button {
+  border-radius: 20px;
+  margin: 5% 10%;
+  background-color: beige;
+  font-size: .7em;
+}
+
+button:hover {
+  background-color: bisque;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1em
+}
+
+h3 {
+  font-size: .7em;
+}
+
+h4 {
+  font-size: .5em;
+}
+h5 {
+  font-size: .4em;
+}
+
+h6 {
+  font-size: .38em;
+  margin: 0px;
+}
+
+p {
+  font-size: .35em;
 }
 
 #dash-container {
@@ -15,51 +55,207 @@ h1 {
   grid-template-rows: 20vh 40vh 40vh
 }
 
+.gen-container {
+  font-size: clamp(1rem, 2vw, 2em);
+}
+
+.card {
+  border-radius: 10px;
+  background-color: bisque;
+  padding: 5%;
+  box-shadow: 5px 5px 10px rgb(83, 83, 83);
+}
+
+
+
 /* Sidebar styles */
 
 #side-bar {
   grid-area: 1 / 1 / -1 / 2;
-  background-color: green;
+  background-color: rgb(0, 113, 128);
   display: grid;
-  grid-template-rows: 10vh 40vh 50vh;
+  grid-template-rows: 10vh 40vh 40vh;
   overflow: auto;
+  color: beige;
 }
 
 #dash-title {
   display: grid;
   grid-template-columns: 20% 80%;
+  align-items: center;
+  padding: 2%;
+}
+
+#side-bar-cont-1 {
+  display: grid;
+  grid-template-rows: repeat(8, 12.5%);
+}
+
+#side-bar-cont-2 {
+  display: grid;
+  grid-template-rows: repeat(8, 12.5%);
 }
 
 .side-bar-item {
   display: grid;
   grid-template-columns: 20% 80%;
+  padding-left: 10%;
+  align-items: center;
+}
+
+.side-bar-item:hover {
+  background-color: rgb(1, 68, 77);
 }
 
 /* Navbar styles */
 
 #navbar {
   grid-area: 1 / 2 / 2 / -1;
-  background-color: rebeccapurple;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(2, 50%);
 }
+
+#search-bar {
+  display: grid;
+  padding: 2.5%;
+  grid-template-columns: 10% 90%;
+}
+
+#search-bar-input {
+  border-radius: 20px;
+  margin: 1%;
+  padding-left: 2%;
+  background-color: beige;
+  font-size: .8em;
+}
+
+#search-bar-input:focus {
+  background-color: bisque;
+  box-shadow: inset;
+}
+
+#profile-info {
+  display: grid;
+  grid-template-columns: 10% 20% 20% 50%;
+  padding: 5%;
+  align-items: center;
+}
+
+#profile-welcome {
+  font-size: 5vh;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 50% 50%;
+  padding: 1%;
+  align-items: center;
+}
+
+#welcome-image {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+#action-pane {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  padding: 5%;
+}
+
+
 
 /* Main content styles */
 
 #main-cont {
   grid-area: 2 / 2 / -1 / 3;
-  background-color: orange;
+  background-color: transparent;
   overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+  grid-template-rows: 2.5vh repeat(3, 1fr);
+  padding: 1% 4%;
+  gap: 2vh;
 }
 
+#projects-title {
+  grid-area: 1/ 1/ 2/ -1;
+}
+
+.project {
+  border-left: .5vw solid rgba(255, 215, 36, 0.616);
+  font-size: 5vh;
+  display: grid;
+  grid-template-rows: 15% 45% 30%;
+  gap: 5%;
+}
+
+.project:hover {
+  background-color: rgba(255, 186, 36, 0.616);
+}
+
+.project-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 7%);
+  gap: 2%;
+  justify-content: end;
+}
 /* Announcement Styles */
 
 #announcements {
+  display: grid;
+  grid-template-rows: 10% 90%;
   grid-area: 2 / 3 / 3 / -1;
-  background-color: brown;
+  background-color: transparent;
+  margin: 3%;
+}
+
+#announcements-container {
+  display: grid;
+  grid-template-rows: 25 50 25
+  /* gap: 5%; */
+}
+
+#announcements-container > *:not(:first-child) {
+  border-top: 5px solid brown;
+  padding-top: 3%;
+  
+}
+
+
+#announcements-container > *:not(:last-child) {
+  
+  margin-bottom: 3%;
+}
+.announcement {
+  overflow: hidden;
+}
+
+.announcement:hover {
+  background-color: rgba(255, 186, 36, 0.616);
 }
 
 /* Trending Styles */
 
 #trending {
+  display: grid;
+  grid-template-rows: 10% 90%;
   grid-area: 3 / 3 / -1 / -1;
-  background-color: aquamarine;
+  margin: 3%;
+}
+
+#trending-item-container {
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+}
+
+.trending-project {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  gap: 5%;
+}
+
+.trending-project:hover {
+  background-color: rgba(255, 186, 36, 0.616);
+  border-radius: 30px;
 }
